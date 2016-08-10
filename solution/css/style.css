@@ -16,6 +16,7 @@ p {
   position: relative;
 }
 
+
 span {
   position: absolute;
   top: 0px;
@@ -59,13 +60,8 @@ span.sushi {
   .col-md-6, .col-md-12 {
     float: left;
   }
-
   .col-md-6 {
     width: 50%;
-  }
-  .col-md-12 {
-    width: 100%;
-    clear: left;
   }
 }
 
