@@ -15,14 +15,14 @@
 					"color": "red",
 				};
 				inputstyle = {
-						"border-color": "red",
+					"border-color": "red",
 				};
 				$scope.results = "Please enter data first";
 			}else{
 				outputstyle = {
-						"display": "inline-block",
-						"color": "green",
-					};
+					"display": "inline-block",
+					"color": "green",
+				};
 				inputstyle = {
 						"border-color": "green",
 				};
@@ -31,15 +31,12 @@
 				var finalItmes = [];
 				var j = 0;
 				for (var i in initialItems){
-
 					initialItems[i] = initialItems[i].trim();
 					if (initialItems[i] != "") {
 						finalItmes[j] = initialItems[i];
 						j += 1;
 					}
 				}
-				// console.log(initialItems);
-				console.log(finalItmes);
 				if ( finalItmes.length > 3) {
 					$scope.results = "Too much!";
 				}else{
