@@ -23,9 +23,9 @@
 				}]
 			}
 		})
-		.state('itemDetail',{
-			url: '/itemDetail/{shortName}',
-			templateUrl: '/src/templates/item.template.html',
+		.state('items',{
+			url: '/items/{shortName}',
+			templateUrl: 'src/templates/items.template.html',
 			controller: 'ItemController as itemCtrl',
 			resolve: {
 				menuItems: ['$stateParams', 'MenuDataService', function($stateParams, MenuDataService){
