@@ -1,36 +1,29 @@
 <!DOCTYPE html>
-<html ng-app='ShoppingList'>
-  <head>
+<html ng-app="MenuApp">
+<head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>No Cookie Shopping List</title>
-  </head>
-  <body>
-    <h1>Welcome to Premade No Cookie Shopping List</h1>
+	<title>Menu</title>
+	<style src='css/style.css'></style>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h1>Welcome to our Restaurant</h1>
 
-    <ui-view></ui-view>
+<ui-view></ui-view>
 
-    <loading-spinner></loading-spinner>
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-ui-router.min.js"></script>
 
-    <!-- Libraries -->
-    <script src="lib/angular.min.js"></script>
-    <script src="lib/angular-ui-router.min.js"></script>
+<script src="src/menuapp.module.js"></script>
+<script src="src/data.module.js"></script>
 
-    <!-- Modules -->
-    <script src="src/shoppinglist/shoppinglist.module.js"></script>
-    <script src="src/spinner/spinner.module.js"></script>
+<script src="src/routes.js"></script>
 
-    <!-- Routes -->
-    <script src="src/routes.js"></script>
+<script src="src/categories.component.js"></script>
+<script src="src/items.component.js"></script>
+<script src="src/menudata.service.js"></script>
+<script src="src/categories.controller.js"></script>
+<script src="src/item.controller.js"></script>
 
-    <!-- 'ShoppingList' module artifacts -->
-    <script src="src/shoppinglist/shoppinglist.component.js"></script>
-    <script src="src/shoppinglist/main-shoppinglist.controller.js"></script>
-    <script src="src/shoppinglist/shoppinglist.service.js"></script>
-    <script src="src/shoppinglist/item-detail.controller.js"></script>
-
-    <!-- 'Spinner' module artifacts -->
-    <script src="src/spinner/loadingspinner.component.js"></script>
-
-  </body>
+</body>
 </html>
