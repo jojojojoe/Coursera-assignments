@@ -7,7 +7,7 @@
 		<tr ng-repeat="category in categoriesCtrl.categories" ui-sref="items({shortName: category.short_name})">
 			<td>
 				{{category.name}}
-				{{category.short_name}}
+				({{category.short_name}})
 			</td>
 		</tr>
 	</table>
