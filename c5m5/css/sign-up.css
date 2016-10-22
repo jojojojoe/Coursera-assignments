@@ -1,0 +1,33 @@
+fieldset {
+	margin: auto;
+	padding: 20px;
+	background-color: #222;
+	width: 70%;
+	border-radius: 10px;
+}
+input {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+  background-color: white;
+}
+button {
+  font-size: 24px;
+}
+
+.ng-touched.ng-valid {
+  border: 2px green solid;
+}
+
+.ng-touched.ng-invalid {
+  border: 2px red solid;
+}
+
+#info {
+  margin-top: 20px;
+}
+
+.signedInfo{
+	text-align: center;
+	color: #f6b319;
+}

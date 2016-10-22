@@ -1,0 +1,27 @@
+<div class="my-info">
+	<div ng-if="myInfoCtrl.registered">
+	<!-- <div> -->
+		<div id="favmenuimg" class="col-md-8 col-sm-8 col-xs-12 col-xxs-12">
+			<p>{{myInfoCtrl.favItem.name}}</p>
+			<img ng-src="https://ychaikin-course5.herokuapp.com/images/{{myInfoCtrl.userInfo.favmenu}}.jpg">
+			<p>{{myInfoCtrl.favItem.description}}</p>
+		</div>
+
+		<div id="favmsg" class="col-md-4 col-sm-4 col-xs-12 col-xxs-12">
+			<div id="pinfo"><span class="glyphicon glyphicon-user"></span></div>
+			<ul>
+				<li>Name:<span>&nbsp;&nbsp;</span>{{myInfoCtrl.userInfo.firstname}}<span>&nbsp;</span> {{myInfoCtrl.userInfo.lastname}}</li>
+				<li>Email:<span>&nbsp;&nbsp;</span>{{myInfoCtrl.userInfo.email}}</li>
+				<li>Phone:<span>&nbsp;&nbsp;</span>{{myInfoCtrl.userInfo.phone}}</li>
+				<li>Your favorite dish:<span>&nbsp;&nbsp;</span>  {{myInfoCtrl.userInfo.favmenu}}</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="registerinfo" ng-if="!myInfoCtrl.registered">
+		Not Signed Up Yet.
+		<br>
+		<a ui-sref="public.signUp">Sign up Now!</a>
+	</div>
+</div>
+
